@@ -1,6 +1,6 @@
 services:
   map:
-    image: overv/openstreetmap-tile-server
+    image: openstreetmap-tile-server
     volumes:
       - osm-data:/data/database/
     ports:
