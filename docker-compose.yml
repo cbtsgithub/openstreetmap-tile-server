@@ -3,6 +3,7 @@ services:
     image: openstreetmap-tile-server
     volumes:
       - osm-data:/data/database/
+    shm_size: 256m
     ports:
       - "8080:80"
     command: "run"
