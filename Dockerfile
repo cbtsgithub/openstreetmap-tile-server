@@ -5,7 +5,7 @@ ENV LC_ALL C.UTF-8
 
 RUN apt-get update \
 && apt-get install -y --no-install-recommends \
- ca-certificates gnupg lsb-release locales \
+ ca-certificates gnupg lsb-release osmium-tool mc locate locales \
  wget curl \
  git-core unzip unrar \
 && locale-gen $LANG && update-locale LANG=$LANG \
